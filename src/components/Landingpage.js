@@ -3,7 +3,9 @@ function Landingpage(){
 
     return(
         <>
-        homepage
+        <div id='landingpage' >
+            landingpage
+        </div>
         </>
     )
 }
