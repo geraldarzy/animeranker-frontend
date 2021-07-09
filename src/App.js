@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from 'react-router-dom';
+import Landingpage from './components/Landingpage';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
     <Switch>
       
       <Route exact path='/'>
-        <div>Homepage</div>
+        <Landingpage />
       </Route>
 
       <Route exact path='/trial'>
