@@ -1,4 +1,3 @@
-import "./RankShows.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from "react";
 import ItemCard from "./ItemCard";
