@@ -1,0 +1,18 @@
+.tierContainer{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+.tier{
+    height: 6rem;
+    width: 50%;
+    background-color: #464646;
+}
+
+.tierRank{
+    height: 6rem;
+    width: 6%;
+}

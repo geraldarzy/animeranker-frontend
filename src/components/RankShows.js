@@ -24,6 +24,28 @@ function RankShows(){
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <div style={{marginTop:'4rem'}}>
+                <div className='tierContainer'>
+                    <div className='tierRank' style={{backgroundColor:'red'}}>S</div>
+                    <div className="tier"></div>
+                </div>
+                <div className='tierContainer'>
+                    <div className='tierRank' style={{backgroundColor:'orange'}}>A</div>
+                    <div className="tier"></div>
+                </div>
+                <div className='tierContainer'>
+                    <div className='tierRank' style={{backgroundColor:'rgb(197, 161, 0)'}}>B</div>
+                    <div className="tier"></div>
+                </div>
+                <div className='tierContainer'>
+                    <div className='tierRank' style={{backgroundColor:'yellow'}}>C</div>
+                    <div className="tier"></div>
+                </div>
+                <div className='tierContainer'>
+                    <div className='tierRank' style={{backgroundColor:'green'}}>D</div>
+                    <div className="tier"></div>
+                </div>
+            </div>
         </>
     )
 }
