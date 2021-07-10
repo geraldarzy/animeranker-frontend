@@ -6,7 +6,7 @@ import ItemCard from './ItemCard'
 function RankMovies() {
     const [list, setList] = useState([])
     useEffect(()=>{
-        fetch('https://anime-rankr.herokuapp.com/genres/movies').then(resp=>resp.json()).then(data=>{
+        fetch('https://anime-rankr.herokuapp.com/genres/movie').then(resp=>resp.json()).then(data=>{
             console.log(data.data.slice(0,20));
             setList(data.data.slice(0,20));
         })
