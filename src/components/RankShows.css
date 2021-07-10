@@ -13,13 +13,16 @@
 }
 
 .tierRank{
+    position: relative;
     height: 6rem;
     width: 6%;
 }
 
 .tierLetter{
-
-
-
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    padding: 0;
+    margin:0;
     text-align: center;
 }

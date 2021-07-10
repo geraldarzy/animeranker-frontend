@@ -30,19 +30,19 @@ function RankShows(){
                     <div className="tier"></div>
                 </div>
                 <div className='tierContainer'>
-                    <div className='tierRank' style={{backgroundColor:'orange'}}>A</div>
+                    <div className='tierRank' style={{backgroundColor:'orange'}}><p className="tierLetter">A</p></div>
                     <div className="tier"></div>
                 </div>
                 <div className='tierContainer'>
-                    <div className='tierRank' style={{backgroundColor:'rgb(197, 161, 0)'}}>B</div>
+                    <div className='tierRank' style={{backgroundColor:'rgb(197, 161, 0)'}}><p className="tierLetter">B</p></div>
                     <div className="tier"></div>
                 </div>
                 <div className='tierContainer'>
-                    <div className='tierRank' style={{backgroundColor:'yellow'}}>C</div>
+                    <div className='tierRank' style={{backgroundColor:'yellow'}}><p className="tierLetter">C</p></div>
                     <div className="tier"></div>
                 </div>
                 <div className='tierContainer'>
-                    <div className='tierRank' style={{backgroundColor:'green'}}>D</div>
+                    <div className='tierRank' style={{backgroundColor:'green'}}><p className="tierLetter">D</p></div>
                     <div className="tier"></div>
                 </div>
             </div>
