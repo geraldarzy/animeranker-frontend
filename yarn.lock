@@ -8826,6 +8826,13 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
+"react-dnd-html5-backend@^14.0.0":
+  "integrity" "sha512-2wAQqRFC1hbRGmk6+dKhOXsyQQOn3cN8PSZyOUeOun9J8t3tjZ7PS2+aFu7CVu2ujMDwTJR3VTwZh8pj2kCv7g=="
+  "resolved" "https://registry.npmjs.org/react-dnd-html5-backend/-/react-dnd-html5-backend-14.0.0.tgz"
+  "version" "14.0.0"
+  dependencies:
+    "dnd-core" "14.0.0"
+
 "react-dnd@^14.0.2":
   "integrity" "sha512-JoEL78sBCg8SzjOKMlkR70GWaPORudhWuTNqJ56lb2P8Vq0eM2+er3ZrMGiSDhOmzaRPuA9SNBz46nHCrjn11A=="
   "resolved" "https://registry.npmjs.org/react-dnd/-/react-dnd-14.0.2.tgz"
