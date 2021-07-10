@@ -2,15 +2,22 @@ import './RankShows.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect,useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import ItemCard from './ItemCard'
+import ItemCard from './ItemCard' 
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchCards } from '../actions/fetchCards'
+
 function RankMovies() {
-    const [list, setList] = useState([])
+    // const [list, setList] = useState([])
+    const list = useSelector((data) => data.cards);
+    console.log(list)
+    const dispatch = useDispatch()
     useEffect(()=>{
-        fetch('https://anime-rankr.herokuapp.com/genres/Movie').then(resp=>resp.json()).then(data=>{
-            console.log(data.data.slice(0,20));
-            setList(data.data.slice(0,20));
-        })
-    })
+        // fetch('https://anime-rankr.herokuapp.com/genres/Movie').then(resp=>resp.json()).then(data=>{
+        //     console.log(data.data.slice(0,20));
+        //     setList(data.data.slice(0,20));
+        // }) now we dispath action => to fetch data => to dispatch to store => then we useSelect to get that info here to us 
+        dispatch(fetchCards());
+    },[])
     return (
         <>
             <Navbar bg="light" expand="lg">
@@ -54,7 +61,7 @@ function RankMovies() {
                     <div className="tier"></div>
                 </div>
             </div>
-            {list.map(item=>(
+            {list.data.map(item=>(
                 
                 <ItemCard key={item.id}imgUrl={item.attributes.image_url}/>
                 
