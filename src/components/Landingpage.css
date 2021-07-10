@@ -1,0 +1,9 @@
+#landingpage{
+    display: block;
+    background-color: lightblue;
+    min-height: 100vh;
+    text-align: center;
+}
+.container{
+    margin: 0 !important;
+}
