@@ -32,8 +32,8 @@ function Landingpage(){
                 What would you like to rate?
             </div>
             <div id="buttons">
-                <button>Top 20 Anime Movies</button>
-                <button>Top 12 Trending Anime Shows</button>
+                <button>Top Anime Movies</button>
+                <button>Top Anime Shows</button>
             </div>
         </div>
         </>
