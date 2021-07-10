@@ -1,6 +1,7 @@
 import './App.css';
 import {Switch, Route} from 'react-router-dom';
 import Landingpage from './components/Landingpage';
+import RankShows from './components/RankShows';
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
         <Landingpage />
       </Route>
 
-      <Route exact path='/trial'>
-        <div>trialpage</div>
+      <Route exact path='/rankshows'>
+        <RankShows/>
       </Route>
 
     </Switch>
