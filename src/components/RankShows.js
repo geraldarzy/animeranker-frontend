@@ -26,7 +26,7 @@ function RankShows(){
             </Navbar>
             <div style={{marginTop:'4rem'}}>
                 <div className='tierContainer'>
-                    <div className='tierRank' style={{backgroundColor:'red'}}>S</div>
+                    <div className='tierRank' style={{backgroundColor:'red'}}><p className="tierLetter">S</p></div>
                     <div className="tier"></div>
                 </div>
                 <div className='tierContainer'>
