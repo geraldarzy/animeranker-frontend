@@ -1,8 +1,17 @@
 import './RankShows.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect,useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import ItemCard from './ItemCard'
 function RankShows(){
-    
+    const [list, setList] = useState([])
+    useEffect(()=>{
+        fetch('https://anime-rankr.herokuapp.com/genres/').then(resp=>resp.json()).then(data=>{
+            console.log(data.data.slice(0,20));
+            setList(data.data.slice(0,20));
+        })
+    })
+   
     return(
         <>
             <Navbar bg="light" expand="lg">
@@ -46,6 +55,11 @@ function RankShows(){
                     <div className="tier"></div>
                 </div>
             </div>
+            {list.map(item=>(
+                
+                <ItemCard key={item.id}imgUrl={item.attributes.image_url}/>
+                
+            ))}
         </>
     )
 }
