@@ -35,8 +35,6 @@ export default function ItemCard({ key,imgUrl, isDragging }) {
       []
     )
     return (
-      <div className="container" ref={dragRef} style={{ backgroundColor }}>
-        <img className="picture" src={imgUrl} ref={dragRef} style={{ backgroundColor }}/>
-      </div>
+      <img className="animeImg" src={imgUrl} ref={dragRef}/>
     )
   }

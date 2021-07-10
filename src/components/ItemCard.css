@@ -1,8 +1,5 @@
-.container {
-    display: inline;
-}
 
-.picture {
+.animeImg {
     height: 100px;
-    width: 100px
+    width: auto;
 }
