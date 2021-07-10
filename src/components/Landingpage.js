@@ -26,8 +26,8 @@ function Landingpage(){
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        <img src={logo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
         <div id='landingpage' >
+        <img src={logo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
             <div className='main-container'>
                 What would you like to rate?
             </div>

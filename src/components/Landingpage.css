@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 #landingpage{
     display: block;
     background-color: lightblue;
@@ -6,4 +7,9 @@
 }
 .container{
     margin: 0 !important;
+}
+.main-container{
+    margin-top: 10%;
+    font-family: 'Nunito', sans-serif;
+    font-size:50px;
 }
