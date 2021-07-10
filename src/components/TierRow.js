@@ -12,11 +12,8 @@ const TierRow = (props) => {
 	});
     return (
         <div className="tierContainer" ref={drop}>
-            <div
-            style={isOver?{backgroundColor:'red'}:{backgroundColor:'blue'}}
-            >hello test</div>
             <div className='tierRank' style={{backgroundColor:`${props.color}`}}><p className="tierLetter">{props.letter}</p></div>
-            <div className="tier"></div>
+            <div className="tier" style={isOver?{backgroundColor:'#7d7d7d'}:{backgroundColor:'#373737'}}></div>
         </div>
     )
 }
