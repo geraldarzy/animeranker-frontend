@@ -9,10 +9,10 @@ function RankShows(){
     useEffect(()=>{
         fetch('https://anime-rankr.herokuapp.com/genres/').then(resp=>resp.json()).then(data=>{
             console.log(data.data.slice(0,20)[0]);
-            let list = data.data.slice(0,20).map(show=>{{debugger}})
+            let list = data.data.slice(0,20).map(show=>(Object.assign(show, {tierLetter: ""})))
             setList(list);
         })
-    })
+    },[])
     // const markAsDone = (id) =>{
     //     const show = list.filter(show=>show.id===id);
     //     show[0].status='done';
@@ -42,11 +42,11 @@ function RankShows(){
             <div style={{marginTop:'4rem'}}>
                 <TierRows/>
             </div>
-            {/* {list.map(item=>(
+            {list.map(item=>(
                 
                 <ItemCard key={item.id}imgUrl={item.attributes.image_url} tierLetter=''/>
                 
-            ))} */}
+            ))}
             <button onClick={()=>{console.log(list);debugger}}>DEBUGGGGGER</button>
         </>
     )
