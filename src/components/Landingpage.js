@@ -7,7 +7,6 @@ function Landingpage(){
 
     return(
         <>
-        <img src={logo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
         <Navbar bg="light" expand="lg">
             <Container>
                 <Navbar.Brand href="#home">Anime-Ranker</Navbar.Brand>
@@ -27,10 +26,8 @@ function Landingpage(){
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+        <img src={logo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
         <div id='landingpage' >
-            <div>
-                animeranker logo goes here
-            </div>
             <div className='main-container'>
                 What would you like to rate?
             </div>
