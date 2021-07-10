@@ -1,17 +1,20 @@
-
+import './Landingpage.css'
 function Landingpage(){
 
     return(
         <>
         <div id='landingpage' >
             <div>
-                Anime - Ranker
+                animeranker logo goes here
             </div>
             <br/>
             <div>
                 What would you like to rate?
             </div>
-            <button></button>
+            <div id="buttons">
+                <button>Top 20 Anime Movies</button>
+                <button>Top 12 Trending Anime Shows</button>
+            </div>
         </div>
         </>
     )
