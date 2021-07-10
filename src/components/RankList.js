@@ -8,10 +8,8 @@ import { Spinner } from "react-bootstrap";
 
 function RankList(props) {
   // const [list, setList] = useState([])
-  console.log(props);
   const rankedList = useSelector((data) => data.cards.data);
   const loading = useSelector((data) => data.loading);
-  console.log(loading);
   const dispatch = useDispatch();
   useEffect(() => {
     // fetch('https://anime-rankr.herokuapp.com/genres/Movie').then(resp=>resp.json()).then(data=>{
