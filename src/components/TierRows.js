@@ -3,7 +3,7 @@ import TierRow from './TierRow'
 
 const TierRows = () => {
     return (
-        <div>
+        <div style={{marginBottom:'15px'}}>
             <TierRow color='red' letter='S'/>
             <TierRow color='orange' letter='A'/>
             <TierRow color='blue' letter='B'/>
