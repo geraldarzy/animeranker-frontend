@@ -1,5 +1,6 @@
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from '../utils/items';
+import './ItemCard.css'
 // const ItemCard = (props) => {
     
 //     const [{ isDragging }, drag] = useDrag({
@@ -34,8 +35,8 @@ export default function ItemCard({ key,imgUrl, isDragging }) {
       []
     )
     return (
-      <div ref={dragRef} style={{ backgroundColor }}>
-        <img src={imgUrl} ref={dragRef} style={{ backgroundColor }}/>
+      <div className="container" ref={dragRef} style={{ backgroundColor }}>
+        <img className="picture" src={imgUrl} ref={dragRef} style={{ backgroundColor }}/>
       </div>
     )
   }
