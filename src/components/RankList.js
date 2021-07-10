@@ -8,12 +8,7 @@ import { Spinner } from "react-bootstrap";
 
 function RankList(props) {
   // const [list, setList] = useState([])
-  const rankedList = useSelector((data) => {
-    if(data.cards.data){
-      let tempList = data.cards.data;
-      return tempList.map(show=>(Object.assign(show, {tierLetter: ""})));
-    }
-  });
+  const rankedList = useSelector((data) => data.cards);
   const loading = useSelector((data) => data.loading);
   const dispatch = useDispatch();
   useEffect(() => {
