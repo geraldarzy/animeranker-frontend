@@ -1,4 +1,4 @@
-import logo from '../cover.png'
+import allAnimeLogo from '../pictures/allAnimeLogo.png'
 import './Landingpage.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 //bootstrap
@@ -27,7 +27,7 @@ function Landingpage(){
             </Container>
         </Navbar>
         <div id='landingpage' >
-        <img src={logo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
+        <img src={allAnimeLogo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
             <div className='main-container'>
                 What would you like to rate?
             </div>
