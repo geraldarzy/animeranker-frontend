@@ -6,7 +6,10 @@ export function fetchCards(genre) {
 
         fetch(`${url}/genres/${genre}`)
         .then(r => r.json())
-        .then(res => dispatch({ type: 'ADD_CARDS', res }));
+        .then(res => {
+            let list = res.data.map(show=>(Object.assign(show, {tierLetter: ""})));
+            dispatch({ type: 'ADD_CARDS', list })
+        });
         
         // fetch('http://localhost:3000/trips')
         // .then(response => response.json())

@@ -11,7 +11,7 @@ const cardReducer = (state = { cards: [], loading: false}, action) => {
         case 'ADD_CARDS':
             return {
                 ...state,
-                cards: action.res, 
+                cards: action.list, 
                 loading: false
             }
 
