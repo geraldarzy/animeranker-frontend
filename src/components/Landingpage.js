@@ -1,10 +1,11 @@
 import allAnimeLogo from '../pictures/allAnimeLogo.png'
 import './Landingpage.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useHistory } from 'react-router-dom'
 //bootstrap
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 function Landingpage(){
-
+    const history = useHistory();
     return(
         <>
         <Navbar bg="light" expand="lg">
@@ -33,7 +34,7 @@ function Landingpage(){
             </div>
             <div id="buttons">
                 <button>Top Anime Movies</button>
-                <button>Top Anime Shows</button>
+                <button onClick={()=>history.push('/rankshows')}>Top Anime Shows</button>
             </div>
         </div>
         </>
