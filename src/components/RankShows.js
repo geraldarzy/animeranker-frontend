@@ -1,4 +1,6 @@
 import './RankShows.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 function RankShows(){
     
     return(
