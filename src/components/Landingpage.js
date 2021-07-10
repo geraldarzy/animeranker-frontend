@@ -3,7 +3,7 @@ import './Landingpage.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useHistory } from 'react-router-dom'
 //bootstrap
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 function Landingpage(){
     const history = useHistory();
     return(
@@ -33,8 +33,8 @@ function Landingpage(){
                 What would you like to rate?
             </div>
             <div id="buttons">
-                <button>Top Anime Movies</button>
-                <button onClick={()=>history.push('/rankshows')}>Top Anime Shows</button>
+                <Button variant='primary' style={{marginRight:'1rem'}} onClick={()=>history.push('/rankmovies')}>Top Anime Movies</Button>
+                <Button variant='secondary' onClick={()=>history.push('/rankshows')}>Top Anime Shows</Button>
             </div>
         </div>
         </>
