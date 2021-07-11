@@ -15,6 +15,15 @@ const cardReducer = (state = { cards: [], loading: false}, action) => {
                 loading: false
             }
 
+        case 'CHANGE_LETTER':
+            state.cards.filter(item=>item.id==action.id)[0].tierLetter=action.letter
+            return {
+                ...state,
+                // cards: (Object.assign(state.cards.filter(item=>item.id!==action.id),(state.cards.filter(item=>item.id==action.id)))[0].tierLetter=action.letter), 
+                cards: state.cards, 
+                loading: false
+            }
+
         default: 
             return state;
         }

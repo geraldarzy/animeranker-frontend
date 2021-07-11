@@ -1,40 +1,23 @@
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from '../utils/items';
 import './ItemCard.css'
-// const ItemCard = (props) => {
-    
-//     const [{ isDragging }, drag] = useDrag({
-// 		item: {
-// 			type: ItemTypes.CARD,
-// 			id: props._id,
-// 		},
-// 		collect: monitor => ({
-// 			isDragging: !!monitor.isDragging(),
-// 		}),
-// 	});
-//     return (
-//         <div
-//         // ref={drag}
-//         // opacity={isDragging ? '0.5': '1'}
-//         >
-//             <img src={props.imgUrl}/>
-//         </div>
-//     )
-//     }
-// export default ItemCard;
 
-export default function ItemCard({ key,imgUrl, isDragging }) {
-    const [{ backgroundColor }, dragRef] = useDrag(
+export default function ItemCard({ item={0:{'attributes':{},'id':0,'tierLetter':'','type':'genre'}},imgUrl }) {
+    const [{ opacity }, dragRef] = useDrag(
       () => ({
         type: ItemTypes.CARD,
-        item: key ,
+        item:{
+          type:ItemTypes.CARD,
+          id: item.id,
+          item:item
+        },
         collect: (monitor) => ({
-          backgroundColor: monitor.isDragging() ? 'red' : 'blue'
+          opacity: monitor.isDragging() ? '0' : '1'
         })
       }),
       []
     )
     return (
-      <img className="animeImg" src={imgUrl} ref={dragRef}/>
+      <img className="animeImg" src={imgUrl} ref={dragRef}style={{opacity}}/>
     )
   }

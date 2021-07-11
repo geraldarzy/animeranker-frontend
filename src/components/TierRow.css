@@ -10,6 +10,7 @@
     height: 6rem;
     width: 50%;
     background-color: #464646;
+    display: inline-flex;
 }
 
 .tierRank{
