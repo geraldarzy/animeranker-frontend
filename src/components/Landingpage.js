@@ -1,4 +1,4 @@
-import allAnimeLogo from '../pictures/allAnimeLogo.png'
+import allAnimeLogo from '../pictures/allAnimeLogo5.png'
 import './Landingpage.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useHistory } from 'react-router-dom'
@@ -9,7 +9,7 @@ function Landingpage(){
     return(
         <>
         <div id='landingpage' >
-        <img src={allAnimeLogo} alt='anime-ranker logo'style={{width:'100%', height:'20rem'}}/>
+            <img id='pageBannger' src={allAnimeLogo} alt='anime-ranker logo'/>
             <div className='main-container'>
                 What would you like to rate?
             </div>
